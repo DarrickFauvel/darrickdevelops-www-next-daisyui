@@ -5,10 +5,6 @@ import ThemeController from "@/components/ThemeController"
 export default function Home() {
   return (
     <main className="">
-      <h1>Darrick Develops</h1>
-
-      <ThemeController />
-
       <PrimaryButton>Primary Button</PrimaryButton>
 
       <Modal />

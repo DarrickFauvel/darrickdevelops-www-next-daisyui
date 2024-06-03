@@ -6,7 +6,7 @@ export default function Modal() {
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
         className="btn"
-        onClick={() => document.getElementById("my_modal_1").showModal()}>
+        onClick={() => document.getElementById("my_modal_1")?.showModal()}>
         open modal
       </button>
       <dialog id="my_modal_1" className="modal">
