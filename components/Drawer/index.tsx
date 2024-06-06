@@ -23,7 +23,7 @@ export default function Drawer() {
                   />
                 </g>
               </svg>
-              DarrickDevelops
+              Darrick Develops
             </a>
           </div>
 
