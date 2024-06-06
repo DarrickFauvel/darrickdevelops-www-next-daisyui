@@ -1,9 +1,8 @@
 import Drawer from "../Drawer"
-import Navbar from "../Navbar"
 
 export default function Header() {
   return (
-    <header>
+    <header className="fixed w-full z-10">
       <Drawer />
     </header>
   )

@@ -3,24 +3,11 @@ import { useEffect, useState } from "react"
 
 export default function ThemeController() {
   const [isDark, setIsDark] = useState(
-    isLocalStorageAvailable() && JSON.parse(localStorage.getItem("isDark"))
+    JSON.parse(localStorage.getItem("isDark"))
   )
 
-  function isLocalStorageAvailable() {
-    // only client browser has access to window.localStorage
-    if (typeof window !== "undefined") {
-      console.log("we are running on the client")
-      return true
-    } else {
-      console.log("we are running on the server")
-      return false
-    }
-  }
-
   useEffect(() => {
-    if (isLocalStorageAvailable()) {
-      localStorage.setItem("isDark", JSON.stringify(isDark))
-    }
+    localStorage.setItem("isDark", JSON.stringify(isDark))
   }, [isDark])
 
   return (
