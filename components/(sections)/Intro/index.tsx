@@ -2,8 +2,9 @@ export default function Intro() {
   return (
     <section className="pt-12 min-h-screen" id="intro">
       <div className="prose mx-auto px-10 py-10">
-        <h1>
-          Hi, I&apos;m Darrick👋
+        <h1 className="text-3xl sm:text-4xl">
+          Hi, I&apos;m Darrick!{" "}
+          <span className="animate-hand-wave inline-block">👋</span>
           <br />I build web apps.
         </h1>
         <p>
